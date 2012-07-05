@@ -157,7 +157,7 @@
 			<!-- end main holder -->
 			<!-- footer -->
 			<div id="footer" class="center">
-				<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR"><img alt="Licença Creative Commons" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Os textos e imagens do website <em>sancahub.com.br</em>, exceto quando indicado o contrário, são resultados de múltiplas colaborações dos encontros conhecidos como Sanca Hub. Você pode compartilhar e remixar este conteúdo!<br />Saiba mais: <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons - Atribuição 3.0 Não Adaptada</a>.</p>
+				<p><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR"><img alt="Licença Creative Commons" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Os textos, imagens e layouts do website <em>sancahub.com.br</em>, exceto quando indicado o contrário, são resultados de múltiplas colaborações dos encontros conhecidos como Sanca Hub. Você pode usar, compartilhar e remixar este conteúdo! Saiba mais: <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.pt_BR">Creative Commons - Atribuição 3.0 Não Adaptada</a>.</p>
 				<p><a href="https://github.com/thiagochristof/SancaHub"><img src="images/logo-github.png" width="80" height="31" alt="github" /></a><br />O código-fonte está publicado sob a <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a> e também é resultado de múltiplas colaborações.<br /><a href="https://github.com/thiagochristof/SancaHub">Leve-me ao repositório no github!</a></p>
 			</div>
 			<!-- end footer -->	

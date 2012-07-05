@@ -462,19 +462,19 @@ h1 .label {
 
 #footer {
 	width: 990px;
-	padding: 40px 0 20px 0;
+	padding: 39px 0 10px 0;
+	border-bottom: 20px solid #222;
 }
 
 #footer p {
 	font-size: 13px;
-	text-align: center;
 	color: #888;
-	padding: 0 150px 20px 150px;
-	line-height: 14px;
+	padding: 0 310px 26px 62px;
+	line-height: 17px;
 }
 
 #footer img {
-	margin: 5px;
+	margin-bottom: 15px;
 }
 
 #footer a {
