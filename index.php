@@ -142,6 +142,13 @@
 					<a href="#main" class="button-top">Topo</a>
 				</div>
 				
+				<!-- content block: Startups -->
+				<div id="startups">
+					<h1><span class="label">Startups</span></h1>
+					<p><strong>Conheça as startups</strong> que estão em São Carlos: <a href="http://sancastartups.com.br">sancastartups.com.br</a></p>
+					<a href="#main" class="button-top">Topo</a>
+				</div>
+				
 				<!-- content block: Contato -->
 				<div id="contact">
 					<h1><span class="label">Contato</span></h1>

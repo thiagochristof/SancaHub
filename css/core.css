@@ -437,6 +437,21 @@ h1 .label {
 	padding: 0 18px 0 0;
 }
 
+#startups {
+	width: 100%;
+	background-color: #f7f7f7;
+	margin-top: 39px;
+	position: relative;
+	color: #3c3c3c;
+}
+
+#startups p {
+	font-size: 26px;
+	line-height: 33px;
+	padding: 25px 50px 80px 42px;
+
+}
+
 #contact {
 	width: 100%;
 	background-color: #e3f300;
