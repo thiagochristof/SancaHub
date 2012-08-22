@@ -13,6 +13,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 12px;
 	color: #000;
+	background-image: url(../images/bg.png); /* texture by Tony Kinard http://subtlepatterns.com/iron-grip/ */
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -49,49 +50,53 @@ img {
 
 /* layout & content */
 
-#application {
+.application {
 	width: 100%;
 }
 
-#main {
+.main {
+	width: 100%;
+	position: relative;
+}
+
+.mainboard-holder {
+	width: 100%;
+}
+
+.mainboard {
+	position: relative;
 	width: 990px;
-	position: relative;
+	height: 630px;
 }
 
-#mainboard {
-	position: relative;
-	width: 100%;
-	height: 741px;
-}
-
-#mainboard .logo {
+.mainboard .logo {
 	position: absolute;
 	top: 47px;
 	left: 0px;
 }
 
-#mainboard .menu {
+.mainboard .menu {
 	position: absolute;
-	top: 154px;
 	left: 0px;
+	top: 140px;
 }
 
-#mainboard .menu a {
+.mainboard .menu a {
 	color: #e3f300;
 	font-size: 17px;
 	text-decoration: none;
 	background-color: #000;
-	padding: 14px 24px 12px 24px;
+	padding: 13px 23px 11px 23px;
 	display: inline-block;
-	margin-right: 6px;
+	margin-right: 4px;
 }
 
-#mainboard .menu a:hover {
+.mainboard .menu a:hover {
 	background-color: #222;
 	color: #e3f300;
 }
 
-#mainboard .menu a:active {
+.mainboard .menu a:active {
 	position: relative;
 	top: 1px;
 }
@@ -117,53 +122,19 @@ a:hover.button-top {
 	color: #e3f300;
 }
 
-#mainboard .bg-ideas {
+.mainboard .ideas {
 	position: absolute;
-	top: 501px;
+	top: 477px;
 	left: 0px;
 }
 
-.ideas {
-	position: absolute;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	color: #2f3200;
-}
-
-.ideas1 {
-	font-size: 27px;
-	top: 514px;
-	left: 34px;
-}
-
-.ideas1 strong {
-	font-size: 36px;
-	padding-right: 1px;
-	color: #1f2000;
-}
-
-.ideas2 {
-	font-size: 19px;
-	top: 570px;
-	left: 36px;
-	line-height: 25px;
-}
-
-.ideas3 {
-	font-size: 22px;
-	top: 636px;
-	left: 37px;
-	font-weight: bold;
-	color: #1f2000;
-}
-
-#mainboard .illustration {
+.mainboard .illustration {
 	position: absolute;
 	top: 19px;
 	right: -3px;
 }
 
-#mainboard .date {
+.mainboard .date {
 	position: absolute;
 	text-align: center;
 }
@@ -171,7 +142,7 @@ a:hover.button-top {
 .date1 {
 	width: 125px;
 	height: 112px;
-	top: 241px;
+	top: 221px;
 	left: 12px;
 	background-image: url(../images/bg-datehighlight.png);
 	color: #000;
@@ -180,13 +151,13 @@ a:hover.button-top {
 .date2 {
 	width: 85px;
 	height: 76px;
-	top: 372px;
+	top: 352px;
 	left: 30px;
 	background-image: url(../images/bg-date.png);
 	color: #252525;
 }
 
-#mainboard .date span {
+.mainboard .date span {
 	display: block;
 }
 
@@ -198,7 +169,7 @@ a:hover.button-top {
 	padding-right: 10px;
 }
 
-#mainboard .date .month {
+.mainboard .date .month {
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -213,7 +184,7 @@ a:hover.button-top {
 	padding-top: 10px;
 }
 
-#mainboard .date .day {
+.mainboard .date .day {
 	font-weight: bold;
 }
 
@@ -227,25 +198,22 @@ a:hover.button-top {
 	margin-top: -2px;
 }
 
-#mainboard .event {
+.mainboard .event {
 	position: absolute;
 	color: #dfdfdf;
 }
 
 .event1 {
-	height: 78px;
-	top: 251px;
+	top: 231px;
 	left: 139px;
-	background-image: url(../images/bg-event.png);
-	padding-right: 19px;
 }
 
 .event2 {
-	top: 386px;
+	top: 366px;
 	left: 124px;
 }
 
-#mainboard .event span {
+.mainboard .event span {
 	display: block;
 }
 
@@ -257,15 +225,15 @@ a:hover.button-top {
 }
 
 .event1 .title {
-	font-size: 25px;
+	font-size: 33px;
 	padding-top: 15px;
 }
 
 .event2 .title {
-	font-size: 22px;
+	font-size: 23px;
 }
 
-#mainboard .event .info {
+.mainboard .event .info {
 	font-size: 13px;
 	color: #aaa;
 }
@@ -278,18 +246,18 @@ a:hover.button-top {
 	padding-left: 3px;
 }
 
-#mainboard .event .info strong {
+.mainboard .event .info strong {
 	font-weight: normal;
 	color: #f7f7f7;
 }
 
-#mainboard .event a {
+.mainboard .event a {
 	color: #aaa;
 	text-decoration: none;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 27px;
 	color: #e3f300;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -298,13 +266,17 @@ h1 {
 h1 .label {
 	background-color: #000;
 	display: inline-block;
-	padding: 19px 44px 19px 37px;
+	padding: 17px 42px 17px 35px;
+}
+
+.content-block {
+	position: relative;
+	width: 990px;
+	margin-top: 39px;
 }
 
 #whatis {
-	width: 100%;
-	background-color: #323232;
-	position: relative;
+	background-color: #292929;
 }
 
 #whatis p {
@@ -322,11 +294,9 @@ h1 .label {
 }
 
 #getinvolved {
-	width: 100%;
 	background-color: #f7f7f7;
-	margin-top: 39px;
-	position: relative;
 	color: #3c3c3c;
+	background-image: url(../images/bg2.png); /* texture by Atle Mo http://subtlepatterns.com/retina-dust/ */
 }
 
 #getinvolved .group {
@@ -437,25 +407,8 @@ h1 .label {
 	padding: 0 18px 0 0;
 }
 
-#startups {
-	width: 100%;
-	background-color: #f7f7f7;
-	margin-top: 39px;
-	position: relative;
-	color: #3c3c3c;
-}
-
-#startups p {
-	font-size: 26px;
-	line-height: 33px;
-	padding: 25px 50px 80px 42px;
-
-}
-
 #contact {
-	width: 100%;
 	background-color: #e3f300;
-	margin-top: 39px;
 }
 
 #contact p {

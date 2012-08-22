@@ -11,7 +11,6 @@
 		<link href="css/core.css?<?php echo @base_convert(@filemtime('css/core.css'), 10, 36); ?>" media="screen" rel="stylesheet" type="text/css" />
 		<!-- hello google web fonts, goodbye core fonts! -->
 		<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- js -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="js/script.js"></script>
@@ -31,57 +30,57 @@
 		</script>
 	</head>
 	<body>
-		<div id="application">
+		<div class="application">
 			<!-- main holder -->
-			<div id="main" class="center">
+			<div class="main center">
 				
 				<!-- top -->
-				<div id="mainboard">
-					<img class="logo" src="images/logo.png" width="234" height="90" alt="sancahub" />
-					<div class="menu">
-						<a href="#whatis" class="button-whatis">o que é?</a><a href="#getinvolved" class="button-getinvolved">participe!</a>
-					</div>
-					<!-- getting real! -->
-					<img class="bg-ideas" src="images/bg-ideas.png" width="990" height="200" alt="" />
-					<p class="ideas ideas1"><strong>Ideias</strong> apenas não valem nada.</p>
-					<p class="ideas ideas2">Conheça pessoas e envolva-se<br />com a execução de ideias.</p>
-					<p class="ideas ideas3">Coloque-as para funcionar.</p>
-					<!-- original illustration by VLADGRIN -->
-					<!-- http://www.istockphoto.com/stock-illustration-18935795-background-gears-with-lamp.php -->
-					<!-- licensed from istockphoto on June, 28 2012 -->
-					<img class="illustration" src="images/sancahub-gettingreal.png" width="609" height="722" alt="Executar é o que vale!" />
-					<!-- remember the people about the party -->
-					<?php include '_gcal.php'; ?>
-					<!-- first event -->
-					<div class="date date1">
-						<span class="month"><?php echo $sancahub_month[0]; ?></span>
-						<span class="day"><?php echo $sancahub_day[0]; ?></span>
-					</div>
-					<div class="event event1">
-						<span class="title"><?php echo $sancahub_title[0]; ?></span>
-						<span class="info">às <strong><?php echo $sancahub_time[0]; ?></strong> - <?php echo $sancahub_info[0]; ?></span>
-					</div>
-					</a>
-					<!-- second event -->
-					<div class="date date2">
-						<span class="month"><?php echo $sancahub_month[1]; ?></span>
-						<span class="day"><?php echo $sancahub_day[1]; ?></span>
-					</div>
-					<div class="event event2">
-						<span class="title"><?php echo $sancahub_title[1]; ?></span>
-						<span class="info">às <strong><?php echo $sancahub_time[1]; ?></strong> - <?php echo $sancahub_info[1]; ?></span>
+				<div class="mainboard-holder">
+					<div class="mainboard center">
+						<img class="logo" src="images/logo.png" width="211" height="81" alt="sanca hub" />
+						<div class="menu">
+							<a href="#whatis" class="button-whatis">O que é?</a>
+							<a href="#getinvolved" class="button-getinvolved">Participe!</a>
+						</div>
+						<!-- getting real! -->
+						<img class="ideas" src="images/ideas.png" width="990" height="142" alt="Conheça pessoas e coloque ideias para funcionar" />
+						<!-- original illustration by VLADGRIN -->
+						<!-- http://www.istockphoto.com/stock-illustration-18935795-background-gears-with-lamp.php -->
+						<!-- licensed from istockphoto on June, 28 2012 -->
+						<img class="illustration" src="images/sancahub-gettingreal.png" width="506" height="600" alt="Executar é o que vale!" />
+						<!-- remember the people about the party -->
+						<?php include '_gcal.php'; ?>
+						<!-- first event -->
+						<div class="date date1">
+							<span class="month"><?php echo $sancahub_month[0]; ?></span>
+							<span class="day"><?php echo $sancahub_day[0]; ?></span>
+						</div>
+						<div class="event event1">
+							<span class="title"><?php echo $sancahub_title[0]; ?></span>
+							<span class="info">às <strong><?php echo $sancahub_time[0]; ?></strong> - <?php echo $sancahub_info[0]; ?></span>
+						</div>
+						</a>
+						<!-- second event -->
+						<div class="date date2">
+							<span class="month"><?php echo $sancahub_month[1]; ?></span>
+							<span class="day"><?php echo $sancahub_day[1]; ?></span>
+						</div>
+						<div class="event event2">
+							<span class="title"><?php echo $sancahub_title[1]; ?></span>
+							<span class="info">às <strong><?php echo $sancahub_time[1]; ?></strong> - <?php echo $sancahub_info[1]; ?></span>
+						</div>
 					</div>
 				</div>
 				
 				<!-- content block: O que é? -->
-				<div id="whatis">
+				<div id="whatis" class="content-block center">
 					<h1><span class="label">O que é?</span></h1>
 					<p><strong>Sanca Hub</strong> conecta <strong>pessoas e startups de São Carlos</strong> (SP) — a Capital da Tecnologia — para dar vida a novos produtos, serviços e ideias.</p>
 					<a href="#main" class="button-top">Topo</a>
 				</div>
 				
 				<!-- content block: Participe! -->
-				<div id="getinvolved" class="cf">
+				<div id="getinvolved" class="cf content-block center">
 					<h1><span class="label">Participe!</span></h1>
 					<img class="group" src="images/group.png" width="30" height="150" alt="quem" />
 					<ul class="who">
@@ -142,15 +141,8 @@
 					<a href="#main" class="button-top">Topo</a>
 				</div>
 				
-				<!-- content block: Startups -->
-				<div id="startups">
-					<h1><span class="label">Startups</span></h1>
-					<p><strong>Conheça as startups</strong> que estão em São Carlos: <a href="http://sancastartups.com.br">sancastartups.com.br</a></p>
-					<a href="#main" class="button-top">Topo</a>
-				</div>
-				
 				<!-- content block: Contato -->
-				<div id="contact">
+				<div id="contact" class="content-block center">
 					<h1><span class="label">Contato</span></h1>
 					<p><strong>Sanca Hub</strong> é resultado de múltiplas colaborações! Antes de entrar em contato, saiba que:</p>
 						<ul>
