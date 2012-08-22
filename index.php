@@ -9,11 +9,22 @@
 		<link href="/favicon.png" rel="icon" type="image/png" />
 		<!-- css -->
 		<link href="css/core.css?<?php echo @base_convert(@filemtime('css/core.css'), 10, 36); ?>" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/notify.css?<?php echo @base_convert(@filemtime('css/notify.css'), 10, 36); ?>" media="screen" rel="stylesheet" type="text/css" />
 		<!-- hello google web fonts, goodbye core fonts! -->
 		<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
 		<!-- js -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 		<script src="js/script.js"></script>
+	    <script type="text/javascript" src="js/notification.js"></script>
+	    <script type="text/javascript">
+	        $(document).ready(function () {
+	            $('.notification.sticky').notify();
+	            $('.button').click(function () {
+	                $('.notification').removeClass('hide').addClass('hide').removeClass('visible');
+	                $('.notification.' + $(this).attr('id') + '').notify({ type: $(this).attr('id') });
+	            });
+	        });
+	    </script>
 		<!-- google analytics -->
 		<script type="text/javascript">
 
@@ -33,6 +44,12 @@
 		<div class="application">
 			<!-- main holder -->
 			<div id="main" class="main center">
+				
+				<!-- notify! plugin -->
+				<div class="notification sticky hide">
+			        <p><strong>Sanca Startups:</strong> confira a listagem atualizada das startups de São Carlos em <a href="http://sancastartups.com.br">sancastartups.com.br</a></p>
+			        <a class="close" href="javascript:"><img src="images/close.png" /></a>
+			    </div>
 				
 				<!-- top -->
 				<div id="mainboard-holder">
