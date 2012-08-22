@@ -59,29 +59,29 @@ img {
 	position: relative;
 }
 
-.mainboard-holder {
+#mainboard-holder {
 	width: 100%;
 }
 
-.mainboard {
+#mainboard {
 	position: relative;
 	width: 990px;
 	height: 630px;
 }
 
-.mainboard .logo {
+#mainboard .logo {
 	position: absolute;
 	top: 47px;
 	left: 0px;
 }
 
-.mainboard .menu {
+#mainboard .menu {
 	position: absolute;
 	left: 0px;
 	top: 140px;
 }
 
-.mainboard .menu a {
+#mainboard .menu a {
 	color: #e3f300;
 	font-size: 17px;
 	text-decoration: none;
@@ -91,12 +91,12 @@ img {
 	margin-right: 4px;
 }
 
-.mainboard .menu a:hover {
+#mainboard .menu a:hover {
 	background-color: #222;
 	color: #e3f300;
 }
 
-.mainboard .menu a:active {
+#mainboard .menu a:active {
 	position: relative;
 	top: 1px;
 }
@@ -122,19 +122,19 @@ a:hover.button-top {
 	color: #e3f300;
 }
 
-.mainboard .ideas {
+#mainboard .ideas {
 	position: absolute;
 	top: 477px;
 	left: 0px;
 }
 
-.mainboard .illustration {
+#mainboard .illustration {
 	position: absolute;
 	top: 19px;
 	right: -3px;
 }
 
-.mainboard .date {
+#mainboard .date {
 	position: absolute;
 	text-align: center;
 }
@@ -157,7 +157,7 @@ a:hover.button-top {
 	color: #252525;
 }
 
-.mainboard .date span {
+#mainboard .date span {
 	display: block;
 }
 
@@ -169,7 +169,7 @@ a:hover.button-top {
 	padding-right: 10px;
 }
 
-.mainboard .date .month {
+#mainboard .date .month {
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -184,7 +184,7 @@ a:hover.button-top {
 	padding-top: 10px;
 }
 
-.mainboard .date .day {
+#mainboard .date .day {
 	font-weight: bold;
 }
 
@@ -198,7 +198,7 @@ a:hover.button-top {
 	margin-top: -2px;
 }
 
-.mainboard .event {
+#mainboard .event {
 	position: absolute;
 	color: #dfdfdf;
 }
@@ -213,7 +213,7 @@ a:hover.button-top {
 	left: 124px;
 }
 
-.mainboard .event span {
+#mainboard .event span {
 	display: block;
 }
 
@@ -233,7 +233,7 @@ a:hover.button-top {
 	font-size: 23px;
 }
 
-.mainboard .event .info {
+#mainboard .event .info {
 	font-size: 13px;
 	color: #aaa;
 }
@@ -246,12 +246,12 @@ a:hover.button-top {
 	padding-left: 3px;
 }
 
-.mainboard .event .info strong {
+#mainboard .event .info strong {
 	font-weight: normal;
 	color: #f7f7f7;
 }
 
-.mainboard .event a {
+#mainboard .event a {
 	color: #aaa;
 	text-decoration: none;
 }

@@ -32,11 +32,11 @@
 	<body>
 		<div class="application">
 			<!-- main holder -->
-			<div class="main center">
+			<div id="main" class="main center">
 				
 				<!-- top -->
-				<div class="mainboard-holder">
-					<div class="mainboard center">
+				<div id="mainboard-holder">
+					<div id="mainboard" class="center">
 						<img class="logo" src="images/logo.png" width="211" height="81" alt="sanca hub" />
 						<div class="menu">
 							<a href="#whatis" class="button-whatis">O que é?</a>
