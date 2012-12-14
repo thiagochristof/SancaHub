@@ -22,8 +22,12 @@ $confirmed = 'http://schemas.google.com/g/2005#event.confirmed';
 $right_now = date("Y-m-d\Th:i:sP", time());
 
 //  For our purposes, a month will be 30 days
-$month_in_seconds = 60 * 60 * 24 * 30;
-$next_month = date("Y-m-d\Th:i:sP", time() + $month_in_seconds);
+//$month_in_seconds = 60 * 60 * 24 * 30;
+//$next_month = date("Y-m-d\Th:i:sP", time() + $month_in_seconds);
+
+// For sancahub.com.br purposes
+$year_in_seconds = 60 * 60 * 24 * 365;
+$next_year = date("Y-m-d\Th:i:sP", time() + $year_in_seconds);
 
 //  This is my version of the call to Google's API.  See
 //   http://code.google.com/apis/calendar/data/2.0/reference.html#Parameters
@@ -40,7 +44,7 @@ $feed = "http://www.google.com/calendar/feeds/sancahub%40gmail.com/" .
         "public/full?orderby=starttime&singleevents=true&" .
         "sortorder=ascending&" .
         "start-min=" . $right_now . "&" .
-        "start-max=" . $next_month;
+        "start-max=" . $next_year;
 
 //  Create a new document from the feed
 $doc = new DOMDocument(); 
