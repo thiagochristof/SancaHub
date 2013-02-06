@@ -8,8 +8,8 @@
 		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<link href="/favicon.png" rel="icon" type="image/png" />
 		<!-- css -->
-		<link href="css/core.css?<?php echo @base_convert(@filemtime('css/core.css'), 10, 36); ?>" media="screen" rel="stylesheet" type="text/css" />
-		<link href="css/notify.css?<?php echo @base_convert(@filemtime('css/notify.css'), 10, 36); ?>" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/core.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/notify.css" media="screen" rel="stylesheet" type="text/css" />
 		<!-- hello google web fonts, goodbye core fonts! -->
 		<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
 		<!-- js -->
@@ -65,26 +65,24 @@
 						<!-- http://www.istockphoto.com/stock-illustration-18935795-background-gears-with-lamp.php -->
 						<!-- licensed from istockphoto on June, 28 2012 -->
 						<img class="illustration" src="images/sancahub-gettingreal.png" width="506" height="600" alt="Executar é o que vale!" />
-						<!-- remember the people about the party -->
-						<?php include '_gcal.php'; ?>
 						<!-- first event -->
 						<div class="date date1">
-							<span class="month"><?php echo $sancahub_month[0]; ?></span>
-							<span class="day"><?php echo $sancahub_day[0]; ?></span>
+							<span class="month">Fevereiro</span>
+							<span class="day">21</span>
 						</div>
 						<div class="event event1">
-							<span class="title"><?php echo $sancahub_title[0]; ?></span>
-							<span class="info">às <strong><?php echo $sancahub_time[0]; ?></strong> - <?php echo $sancahub_info[0]; ?></span>
+							<span class="title">Happy hour no Café 7</span>
+							<span class="info">às <strong>20:00</strong> - Rua Sete de Setembro, 1447</span>
 						</div>
 						</a>
 						<!-- second event -->
 						<div class="date date2">
-							<span class="month"><?php echo $sancahub_month[1]; ?></span>
-							<span class="day"><?php echo $sancahub_day[1]; ?></span>
+							<span class="month">Fevereiro</span>
+							<span class="day">26</span>
 						</div>
 						<div class="event event2">
-							<span class="title"><?php echo $sancahub_title[1]; ?></span>
-							<span class="info">às <strong><?php echo $sancahub_time[1]; ?></strong> - <?php echo $sancahub_info[1]; ?></span>
+							<span class="title">Hubstorm</span>
+							<span class="info">às <strong>19:30</strong> - Sessão de apresentações e feedback</span>
 						</div>
 					</div>
 				</div>
